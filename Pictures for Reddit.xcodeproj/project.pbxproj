@@ -7,39 +7,117 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D91590272C28614BBDF5285 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D73B5221AA67663717AA4F97 /* libPods.a */; };
+		E10E78631B9C797800FEF505 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E10E78621B9C797800FEF505 /* CoreText.framework */; };
 		E144943D1B9A18C2009AD02B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E144943C1B9A18C2009AD02B /* main.m */; };
 		E14494401B9A18C2009AD02B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E144943F1B9A18C2009AD02B /* AppDelegate.m */; };
-		E14494431B9A18C2009AD02B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E14494421B9A18C2009AD02B /* ViewController.m */; };
 		E14494461B9A18C2009AD02B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E14494441B9A18C2009AD02B /* Main.storyboard */; };
 		E14494481B9A18C2009AD02B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E14494471B9A18C2009AD02B /* Images.xcassets */; };
 		E144944B1B9A18C2009AD02B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E14494491B9A18C2009AD02B /* LaunchScreen.xib */; };
-		E14494571B9A18C3009AD02B /* Pictures_for_RedditTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E14494561B9A18C3009AD02B /* Pictures_for_RedditTests.m */; };
+		E14494621B9A1A39009AD02B /* SubscribedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E14494611B9A1A39009AD02B /* SubscribedViewController.m */; };
+		E14494651B9A1CB9009AD02B /* SubredditListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E14494641B9A1CB9009AD02B /* SubredditListTableViewController.m */; };
+		E14494681B9A20D5009AD02B /* ChooseSubredditTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E14494671B9A20D5009AD02B /* ChooseSubredditTableViewController.m */; };
+		E144946B1B9A33A8009AD02B /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E144946A1B9A33A8009AD02B /* LoginViewController.m */; };
+		E15B1C441B9B04AB008E5445 /* LoadingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E15B1C431B9B04AB008E5445 /* LoadingTableViewCell.m */; };
+		E15B1C471B9B0D0E008E5445 /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = E15B1C461B9B0D0E008E5445 /* Helper.m */; };
+		E15B1C4E1B9B0F02008E5445 /* SubredditTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E15B1C4D1B9B0F02008E5445 /* SubredditTableViewCell.m */; };
+		E15B1C511B9B1CE6008E5445 /* LinkTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E15B1C501B9B1CE6008E5445 /* LinkTableViewCell.m */; };
+		E15B1C541B9B21B6008E5445 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = E15B1C531B9B21B6008E5445 /* UIImage+Resize.m */; };
+		E15B1C581B9B8AF8008E5445 /* SwipeView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E15B1C571B9B8AF8008E5445 /* SwipeView.storyboard */; };
+		E15B1C611B9BA5A2008E5445 /* comments@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E15B1C5A1B9BA5A2008E5445 /* comments@2x.png */; };
+		E15B1C631B9BA5A2008E5445 /* share@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E15B1C5C1B9BA5A2008E5445 /* share@2x.png */; };
+		E15B1C641B9BA5A2008E5445 /* user@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E15B1C5D1B9BA5A2008E5445 /* user@2x.png */; };
+		E15B1C691B9BA74A008E5445 /* comments@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E15B1C681B9BA74A008E5445 /* comments@3x.png */; };
+		E15B1C6B1B9BA78C008E5445 /* share@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E15B1C6A1B9BA78C008E5445 /* share@3x.png */; };
+		E15B1C6E1B9BA7AE008E5445 /* settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E15B1C6C1B9BA7AE008E5445 /* settings@2x.png */; };
+		E15B1C6F1B9BA7AE008E5445 /* settings@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E15B1C6D1B9BA7AE008E5445 /* settings@3x.png */; };
+		E15B1C761B9BA88D008E5445 /* thumbs-down-filled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E15B1C701B9BA88D008E5445 /* thumbs-down-filled@2x.png */; };
+		E15B1C771B9BA88D008E5445 /* thumbs-down-filled@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E15B1C711B9BA88D008E5445 /* thumbs-down-filled@3x.png */; };
+		E15B1C781B9BA88D008E5445 /* thumbs-down@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E15B1C721B9BA88D008E5445 /* thumbs-down@3x.png */; };
+		E15B1C791B9BA88D008E5445 /* thumbs-up-filled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E15B1C731B9BA88D008E5445 /* thumbs-up-filled@2x.png */; };
+		E15B1C7A1B9BA88D008E5445 /* thumbs-up-filled@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E15B1C741B9BA88D008E5445 /* thumbs-up-filled@3x.png */; };
+		E15B1C7B1B9BA88D008E5445 /* thumbs-up@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E15B1C751B9BA88D008E5445 /* thumbs-up@3x.png */; };
+		E16BBF9D1B9C48D900DDD458 /* CommentsWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E16BBF9C1B9C48D900DDD458 /* CommentsWebViewController.m */; };
+		E16BBFA01B9C4CF800DDD458 /* CommentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E16BBF9F1B9C4CF800DDD458 /* CommentsTableViewController.m */; };
+		E16BBFA41B9C4E6300DDD458 /* CommentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E16BBFA31B9C4E6300DDD458 /* CommentTableViewCell.m */; };
+		E16BBFA71B9C637900DDD458 /* CommentsTreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E16BBFA61B9C637900DDD458 /* CommentsTreeViewController.m */; };
+		E16BBFA91B9C647C00DDD458 /* CommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E16BBFA81B9C647C00DDD458 /* CommentTableViewCell.xib */; };
+		E16BBFAD1B9C6FC900DDD458 /* expand.png in Resources */ = {isa = PBXBuildFile; fileRef = E16BBFAA1B9C6FC900DDD458 /* expand.png */; };
+		E16BBFAE1B9C6FC900DDD458 /* expand@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E16BBFAB1B9C6FC900DDD458 /* expand@2x.png */; };
+		E16BBFAF1B9C6FC900DDD458 /* expand@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E16BBFAC1B9C6FC900DDD458 /* expand@3x.png */; };
+		E16BBFB31B9C70F000DDD458 /* collapse.png in Resources */ = {isa = PBXBuildFile; fileRef = E16BBFB01B9C70F000DDD458 /* collapse.png */; };
+		E16BBFB41B9C70F000DDD458 /* collapse@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E16BBFB11B9C70F000DDD458 /* collapse@2x.png */; };
+		E16BBFB51B9C70F000DDD458 /* collapse@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E16BBFB21B9C70F000DDD458 /* collapse@3x.png */; };
+		E16ECB321B9A411D004B4D4C /* SubredditSwipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E16ECB311B9A411D004B4D4C /* SubredditSwipeViewController.m */; };
+		E16ECB351B9A4180004B4D4C /* SubredditImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E16ECB341B9A4180004B4D4C /* SubredditImageViewController.m */; };
+		E191A0881B9C8D5A009B7FD5 /* SubredditTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E191A0871B9C8D5A009B7FD5 /* SubredditTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		E14494511B9A18C3009AD02B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E144942F1B9A18C2009AD02B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E14494361B9A18C2009AD02B;
-			remoteInfo = "Pictures for Reddit";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		E14494371B9A18C2009AD02B /* Pictures for Reddit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pictures for Reddit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1120C9D48112A311DA82CAD3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		77B3A6D6455215BE1163CEB7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		D73B5221AA67663717AA4F97 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E10E78621B9C797800FEF505 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		E14494371B9A18C2009AD02B /* Pictures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pictures.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E144943B1B9A18C2009AD02B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E144943C1B9A18C2009AD02B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E144943E1B9A18C2009AD02B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E144943F1B9A18C2009AD02B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E14494411B9A18C2009AD02B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E14494421B9A18C2009AD02B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E14494451B9A18C2009AD02B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E14494471B9A18C2009AD02B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E144944A1B9A18C2009AD02B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		E14494501B9A18C3009AD02B /* Pictures for RedditTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pictures for RedditTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E14494551B9A18C3009AD02B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E14494561B9A18C3009AD02B /* Pictures_for_RedditTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pictures_for_RedditTests.m; sourceTree = "<group>"; };
+		E14494601B9A1A39009AD02B /* SubscribedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubscribedViewController.h; sourceTree = "<group>"; };
+		E14494611B9A1A39009AD02B /* SubscribedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubscribedViewController.m; sourceTree = "<group>"; };
+		E14494631B9A1CB9009AD02B /* SubredditListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubredditListTableViewController.h; sourceTree = "<group>"; };
+		E14494641B9A1CB9009AD02B /* SubredditListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubredditListTableViewController.m; sourceTree = "<group>"; };
+		E14494661B9A20D5009AD02B /* ChooseSubredditTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseSubredditTableViewController.h; sourceTree = "<group>"; };
+		E14494671B9A20D5009AD02B /* ChooseSubredditTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseSubredditTableViewController.m; sourceTree = "<group>"; };
+		E14494691B9A33A8009AD02B /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		E144946A1B9A33A8009AD02B /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		E15B1C421B9B04AB008E5445 /* LoadingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingTableViewCell.h; sourceTree = "<group>"; };
+		E15B1C431B9B04AB008E5445 /* LoadingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingTableViewCell.m; sourceTree = "<group>"; };
+		E15B1C451B9B0D0E008E5445 /* Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helper.h; sourceTree = "<group>"; };
+		E15B1C461B9B0D0E008E5445 /* Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Helper.m; sourceTree = "<group>"; };
+		E15B1C4C1B9B0F02008E5445 /* SubredditTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubredditTableViewCell.h; sourceTree = "<group>"; };
+		E15B1C4D1B9B0F02008E5445 /* SubredditTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubredditTableViewCell.m; sourceTree = "<group>"; };
+		E15B1C4F1B9B1CE6008E5445 /* LinkTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkTableViewCell.h; sourceTree = "<group>"; };
+		E15B1C501B9B1CE6008E5445 /* LinkTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkTableViewCell.m; sourceTree = "<group>"; };
+		E15B1C521B9B21B6008E5445 /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
+		E15B1C531B9B21B6008E5445 /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
+		E15B1C571B9B8AF8008E5445 /* SwipeView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SwipeView.storyboard; sourceTree = "<group>"; };
+		E15B1C5A1B9BA5A2008E5445 /* comments@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "comments@2x.png"; path = "Resources/comments@2x.png"; sourceTree = "<group>"; };
+		E15B1C5C1B9BA5A2008E5445 /* share@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "share@2x.png"; path = "Resources/share@2x.png"; sourceTree = "<group>"; };
+		E15B1C5D1B9BA5A2008E5445 /* user@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "user@2x.png"; path = "Resources/user@2x.png"; sourceTree = "<group>"; };
+		E15B1C681B9BA74A008E5445 /* comments@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "comments@3x.png"; path = "Resources/comments@3x.png"; sourceTree = "<group>"; };
+		E15B1C6A1B9BA78C008E5445 /* share@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "share@3x.png"; path = "Resources/share@3x.png"; sourceTree = "<group>"; };
+		E15B1C6C1B9BA7AE008E5445 /* settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "settings@2x.png"; path = "Resources/settings@2x.png"; sourceTree = "<group>"; };
+		E15B1C6D1B9BA7AE008E5445 /* settings@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "settings@3x.png"; path = "Resources/settings@3x.png"; sourceTree = "<group>"; };
+		E15B1C701B9BA88D008E5445 /* thumbs-down-filled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "thumbs-down-filled@2x.png"; path = "Resources/thumbs-down-filled@2x.png"; sourceTree = "<group>"; };
+		E15B1C711B9BA88D008E5445 /* thumbs-down-filled@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "thumbs-down-filled@3x.png"; path = "Resources/thumbs-down-filled@3x.png"; sourceTree = "<group>"; };
+		E15B1C721B9BA88D008E5445 /* thumbs-down@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "thumbs-down@3x.png"; path = "Resources/thumbs-down@3x.png"; sourceTree = "<group>"; };
+		E15B1C731B9BA88D008E5445 /* thumbs-up-filled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "thumbs-up-filled@2x.png"; path = "Resources/thumbs-up-filled@2x.png"; sourceTree = "<group>"; };
+		E15B1C741B9BA88D008E5445 /* thumbs-up-filled@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "thumbs-up-filled@3x.png"; path = "Resources/thumbs-up-filled@3x.png"; sourceTree = "<group>"; };
+		E15B1C751B9BA88D008E5445 /* thumbs-up@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "thumbs-up@3x.png"; path = "Resources/thumbs-up@3x.png"; sourceTree = "<group>"; };
+		E16BBF9B1B9C48D900DDD458 /* CommentsWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentsWebViewController.h; sourceTree = "<group>"; };
+		E16BBF9C1B9C48D900DDD458 /* CommentsWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentsWebViewController.m; sourceTree = "<group>"; };
+		E16BBF9E1B9C4CF800DDD458 /* CommentsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentsTableViewController.h; sourceTree = "<group>"; };
+		E16BBF9F1B9C4CF800DDD458 /* CommentsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentsTableViewController.m; sourceTree = "<group>"; };
+		E16BBFA21B9C4E6300DDD458 /* CommentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentTableViewCell.h; sourceTree = "<group>"; };
+		E16BBFA31B9C4E6300DDD458 /* CommentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentTableViewCell.m; sourceTree = "<group>"; };
+		E16BBFA51B9C637900DDD458 /* CommentsTreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentsTreeViewController.h; sourceTree = "<group>"; };
+		E16BBFA61B9C637900DDD458 /* CommentsTreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentsTreeViewController.m; sourceTree = "<group>"; };
+		E16BBFA81B9C647C00DDD458 /* CommentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentTableViewCell.xib; sourceTree = "<group>"; };
+		E16BBFAA1B9C6FC900DDD458 /* expand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = expand.png; path = Resources/expand.png; sourceTree = "<group>"; };
+		E16BBFAB1B9C6FC900DDD458 /* expand@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "expand@2x.png"; path = "Resources/expand@2x.png"; sourceTree = "<group>"; };
+		E16BBFAC1B9C6FC900DDD458 /* expand@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "expand@3x.png"; path = "Resources/expand@3x.png"; sourceTree = "<group>"; };
+		E16BBFB01B9C70F000DDD458 /* collapse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = collapse.png; path = Resources/collapse.png; sourceTree = "<group>"; };
+		E16BBFB11B9C70F000DDD458 /* collapse@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "collapse@2x.png"; path = "Resources/collapse@2x.png"; sourceTree = "<group>"; };
+		E16BBFB21B9C70F000DDD458 /* collapse@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "collapse@3x.png"; path = "Resources/collapse@3x.png"; sourceTree = "<group>"; };
+		E16ECB301B9A411D004B4D4C /* SubredditSwipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubredditSwipeViewController.h; sourceTree = "<group>"; };
+		E16ECB311B9A411D004B4D4C /* SubredditSwipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubredditSwipeViewController.m; sourceTree = "<group>"; };
+		E16ECB331B9A4180004B4D4C /* SubredditImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubredditImageViewController.h; sourceTree = "<group>"; };
+		E16ECB341B9A4180004B4D4C /* SubredditImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubredditImageViewController.m; sourceTree = "<group>"; };
+		E191A0871B9C8D5A009B7FD5 /* SubredditTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubredditTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,33 +125,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E144944D1B9A18C3009AD02B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				E10E78631B9C797800FEF505 /* CoreText.framework in Frameworks */,
+				1D91590272C28614BBDF5285 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F09C41E44EB1766B6B5834D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E10E78621B9C797800FEF505 /* CoreText.framework */,
+				D73B5221AA67663717AA4F97 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A5F8432AB9D4FD5AB0A19D0D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				77B3A6D6455215BE1163CEB7 /* Pods.debug.xcconfig */,
+				1120C9D48112A311DA82CAD3 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E144942E1B9A18C2009AD02B = {
 			isa = PBXGroup;
 			children = (
 				E14494391B9A18C2009AD02B /* Pictures for Reddit */,
-				E14494531B9A18C3009AD02B /* Pictures for RedditTests */,
 				E14494381B9A18C2009AD02B /* Products */,
+				A5F8432AB9D4FD5AB0A19D0D /* Pods */,
+				5F09C41E44EB1766B6B5834D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		E14494381B9A18C2009AD02B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E14494371B9A18C2009AD02B /* Pictures for Reddit.app */,
-				E14494501B9A18C3009AD02B /* Pictures for RedditTests.xctest */,
+				E14494371B9A18C2009AD02B /* Pictures.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,11 +172,18 @@
 		E14494391B9A18C2009AD02B /* Pictures for Reddit */ = {
 			isa = PBXGroup;
 			children = (
+				E15B1C451B9B0D0E008E5445 /* Helper.h */,
+				E15B1C461B9B0D0E008E5445 /* Helper.m */,
 				E144943E1B9A18C2009AD02B /* AppDelegate.h */,
 				E144943F1B9A18C2009AD02B /* AppDelegate.m */,
-				E14494411B9A18C2009AD02B /* ViewController.h */,
-				E14494421B9A18C2009AD02B /* ViewController.m */,
+				E15B1C521B9B21B6008E5445 /* UIImage+Resize.h */,
+				E15B1C531B9B21B6008E5445 /* UIImage+Resize.m */,
+				E15B1C4A1B9B0EE6008E5445 /* Subreddits */,
+				E16BBF9A1B9C47AC00DDD458 /* Comments */,
+				E15B1C491B9B0EDE008E5445 /* Add */,
+				E15B1C481B9B0ED9008E5445 /* Login */,
 				E14494441B9A18C2009AD02B /* Main.storyboard */,
+				E15B1C571B9B8AF8008E5445 /* SwipeView.storyboard */,
 				E14494471B9A18C2009AD02B /* Images.xcassets */,
 				E14494491B9A18C2009AD02B /* LaunchScreen.xib */,
 				E144943A1B9A18C2009AD02B /* Supporting Files */,
@@ -96,27 +194,109 @@
 		E144943A1B9A18C2009AD02B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E15B1C591B9BA599008E5445 /* Resources */,
 				E144943B1B9A18C2009AD02B /* Info.plist */,
 				E144943C1B9A18C2009AD02B /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		E14494531B9A18C3009AD02B /* Pictures for RedditTests */ = {
+		E15B1C481B9B0ED9008E5445 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				E14494561B9A18C3009AD02B /* Pictures_for_RedditTests.m */,
-				E14494541B9A18C3009AD02B /* Supporting Files */,
+				E14494691B9A33A8009AD02B /* LoginViewController.h */,
+				E144946A1B9A33A8009AD02B /* LoginViewController.m */,
 			);
-			path = "Pictures for RedditTests";
+			name = Login;
 			sourceTree = "<group>";
 		};
-		E14494541B9A18C3009AD02B /* Supporting Files */ = {
+		E15B1C491B9B0EDE008E5445 /* Add */ = {
 			isa = PBXGroup;
 			children = (
-				E14494551B9A18C3009AD02B /* Info.plist */,
+				E14494661B9A20D5009AD02B /* ChooseSubredditTableViewController.h */,
+				E14494671B9A20D5009AD02B /* ChooseSubredditTableViewController.m */,
 			);
-			name = "Supporting Files";
+			name = Add;
+			sourceTree = "<group>";
+		};
+		E15B1C4A1B9B0EE6008E5445 /* Subreddits */ = {
+			isa = PBXGroup;
+			children = (
+				E14494601B9A1A39009AD02B /* SubscribedViewController.h */,
+				E14494611B9A1A39009AD02B /* SubscribedViewController.m */,
+				E14494631B9A1CB9009AD02B /* SubredditListTableViewController.h */,
+				E14494641B9A1CB9009AD02B /* SubredditListTableViewController.m */,
+				E16ECB301B9A411D004B4D4C /* SubredditSwipeViewController.h */,
+				E16ECB311B9A411D004B4D4C /* SubredditSwipeViewController.m */,
+				E16ECB331B9A4180004B4D4C /* SubredditImageViewController.h */,
+				E16ECB341B9A4180004B4D4C /* SubredditImageViewController.m */,
+				E15B1C4B1B9B0EEC008E5445 /* Cells */,
+			);
+			name = Subreddits;
+			sourceTree = "<group>";
+		};
+		E15B1C4B1B9B0EEC008E5445 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E15B1C421B9B04AB008E5445 /* LoadingTableViewCell.h */,
+				E15B1C431B9B04AB008E5445 /* LoadingTableViewCell.m */,
+				E15B1C4C1B9B0F02008E5445 /* SubredditTableViewCell.h */,
+				E15B1C4D1B9B0F02008E5445 /* SubredditTableViewCell.m */,
+				E191A0871B9C8D5A009B7FD5 /* SubredditTableViewCell.xib */,
+				E15B1C4F1B9B1CE6008E5445 /* LinkTableViewCell.h */,
+				E15B1C501B9B1CE6008E5445 /* LinkTableViewCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		E15B1C591B9BA599008E5445 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E16BBFB01B9C70F000DDD458 /* collapse.png */,
+				E16BBFB11B9C70F000DDD458 /* collapse@2x.png */,
+				E16BBFB21B9C70F000DDD458 /* collapse@3x.png */,
+				E16BBFAA1B9C6FC900DDD458 /* expand.png */,
+				E16BBFAB1B9C6FC900DDD458 /* expand@2x.png */,
+				E16BBFAC1B9C6FC900DDD458 /* expand@3x.png */,
+				E15B1C5A1B9BA5A2008E5445 /* comments@2x.png */,
+				E15B1C681B9BA74A008E5445 /* comments@3x.png */,
+				E15B1C6C1B9BA7AE008E5445 /* settings@2x.png */,
+				E15B1C6D1B9BA7AE008E5445 /* settings@3x.png */,
+				E15B1C5C1B9BA5A2008E5445 /* share@2x.png */,
+				E15B1C6A1B9BA78C008E5445 /* share@3x.png */,
+				E15B1C5D1B9BA5A2008E5445 /* user@2x.png */,
+				E15B1C701B9BA88D008E5445 /* thumbs-down-filled@2x.png */,
+				E15B1C711B9BA88D008E5445 /* thumbs-down-filled@3x.png */,
+				E15B1C721B9BA88D008E5445 /* thumbs-down@3x.png */,
+				E15B1C731B9BA88D008E5445 /* thumbs-up-filled@2x.png */,
+				E15B1C741B9BA88D008E5445 /* thumbs-up-filled@3x.png */,
+				E15B1C751B9BA88D008E5445 /* thumbs-up@3x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E16BBF9A1B9C47AC00DDD458 /* Comments */ = {
+			isa = PBXGroup;
+			children = (
+				E16BBF9B1B9C48D900DDD458 /* CommentsWebViewController.h */,
+				E16BBF9C1B9C48D900DDD458 /* CommentsWebViewController.m */,
+				E16BBF9E1B9C4CF800DDD458 /* CommentsTableViewController.h */,
+				E16BBF9F1B9C4CF800DDD458 /* CommentsTableViewController.m */,
+				E16BBFA51B9C637900DDD458 /* CommentsTreeViewController.h */,
+				E16BBFA61B9C637900DDD458 /* CommentsTreeViewController.m */,
+				E16BBFA11B9C4E5600DDD458 /* Cells */,
+			);
+			name = Comments;
+			sourceTree = "<group>";
+		};
+		E16BBFA11B9C4E5600DDD458 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E16BBFA21B9C4E6300DDD458 /* CommentTableViewCell.h */,
+				E16BBFA31B9C4E6300DDD458 /* CommentTableViewCell.m */,
+				E16BBFA81B9C647C00DDD458 /* CommentTableViewCell.xib */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,9 +306,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E144945A1B9A18C3009AD02B /* Build configuration list for PBXNativeTarget "Pictures for Reddit" */;
 			buildPhases = (
+				8ED00E66AE924D78A7365180 /* Check Pods Manifest.lock */,
 				E14494331B9A18C2009AD02B /* Sources */,
 				E14494341B9A18C2009AD02B /* Frameworks */,
 				E14494351B9A18C2009AD02B /* Resources */,
+				00E4B5E9E726FA8191EF37FC /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -136,26 +318,8 @@
 			);
 			name = "Pictures for Reddit";
 			productName = "Pictures for Reddit";
-			productReference = E14494371B9A18C2009AD02B /* Pictures for Reddit.app */;
+			productReference = E14494371B9A18C2009AD02B /* Pictures.app */;
 			productType = "com.apple.product-type.application";
-		};
-		E144944F1B9A18C3009AD02B /* Pictures for RedditTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E144945D1B9A18C3009AD02B /* Build configuration list for PBXNativeTarget "Pictures for RedditTests" */;
-			buildPhases = (
-				E144944C1B9A18C3009AD02B /* Sources */,
-				E144944D1B9A18C3009AD02B /* Frameworks */,
-				E144944E1B9A18C3009AD02B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E14494521B9A18C3009AD02B /* PBXTargetDependency */,
-			);
-			name = "Pictures for RedditTests";
-			productName = "Pictures for RedditTests";
-			productReference = E14494501B9A18C3009AD02B /* Pictures for RedditTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -168,10 +332,6 @@
 				TargetAttributes = {
 					E14494361B9A18C2009AD02B = {
 						CreatedOnToolsVersion = 6.4;
-					};
-					E144944F1B9A18C3009AD02B = {
-						CreatedOnToolsVersion = 6.4;
-						TestTargetID = E14494361B9A18C2009AD02B;
 					};
 				};
 			};
@@ -189,7 +349,6 @@
 			projectRoot = "";
 			targets = (
 				E14494361B9A18C2009AD02B /* Pictures for Reddit */,
-				E144944F1B9A18C3009AD02B /* Pictures for RedditTests */,
 			);
 		};
 /* End PBXProject section */
@@ -199,49 +358,95 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E16BBFB31B9C70F000DDD458 /* collapse.png in Resources */,
 				E14494461B9A18C2009AD02B /* Main.storyboard in Resources */,
+				E15B1C691B9BA74A008E5445 /* comments@3x.png in Resources */,
+				E15B1C7B1B9BA88D008E5445 /* thumbs-up@3x.png in Resources */,
+				E15B1C631B9BA5A2008E5445 /* share@2x.png in Resources */,
+				E15B1C771B9BA88D008E5445 /* thumbs-down-filled@3x.png in Resources */,
+				E15B1C781B9BA88D008E5445 /* thumbs-down@3x.png in Resources */,
+				E191A0881B9C8D5A009B7FD5 /* SubredditTableViewCell.xib in Resources */,
 				E144944B1B9A18C2009AD02B /* LaunchScreen.xib in Resources */,
+				E16BBFA91B9C647C00DDD458 /* CommentTableViewCell.xib in Resources */,
+				E15B1C6B1B9BA78C008E5445 /* share@3x.png in Resources */,
+				E15B1C7A1B9BA88D008E5445 /* thumbs-up-filled@3x.png in Resources */,
+				E15B1C611B9BA5A2008E5445 /* comments@2x.png in Resources */,
+				E16BBFAD1B9C6FC900DDD458 /* expand.png in Resources */,
+				E15B1C791B9BA88D008E5445 /* thumbs-up-filled@2x.png in Resources */,
+				E16BBFAF1B9C6FC900DDD458 /* expand@3x.png in Resources */,
+				E15B1C6E1B9BA7AE008E5445 /* settings@2x.png in Resources */,
+				E16BBFB51B9C70F000DDD458 /* collapse@3x.png in Resources */,
+				E16BBFAE1B9C6FC900DDD458 /* expand@2x.png in Resources */,
+				E15B1C761B9BA88D008E5445 /* thumbs-down-filled@2x.png in Resources */,
+				E16BBFB41B9C70F000DDD458 /* collapse@2x.png in Resources */,
+				E15B1C581B9B8AF8008E5445 /* SwipeView.storyboard in Resources */,
+				E15B1C641B9BA5A2008E5445 /* user@2x.png in Resources */,
+				E15B1C6F1B9BA7AE008E5445 /* settings@3x.png in Resources */,
 				E14494481B9A18C2009AD02B /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E144944E1B9A18C3009AD02B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00E4B5E9E726FA8191EF37FC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
-/* End PBXResourcesBuildPhase section */
+		8ED00E66AE924D78A7365180 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E14494331B9A18C2009AD02B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E14494431B9A18C2009AD02B /* ViewController.m in Sources */,
+				E16BBFA71B9C637900DDD458 /* CommentsTreeViewController.m in Sources */,
+				E15B1C441B9B04AB008E5445 /* LoadingTableViewCell.m in Sources */,
+				E16BBF9D1B9C48D900DDD458 /* CommentsWebViewController.m in Sources */,
+				E14494681B9A20D5009AD02B /* ChooseSubredditTableViewController.m in Sources */,
+				E16ECB351B9A4180004B4D4C /* SubredditImageViewController.m in Sources */,
+				E15B1C511B9B1CE6008E5445 /* LinkTableViewCell.m in Sources */,
 				E14494401B9A18C2009AD02B /* AppDelegate.m in Sources */,
+				E144946B1B9A33A8009AD02B /* LoginViewController.m in Sources */,
+				E16BBFA41B9C4E6300DDD458 /* CommentTableViewCell.m in Sources */,
+				E15B1C4E1B9B0F02008E5445 /* SubredditTableViewCell.m in Sources */,
+				E16BBFA01B9C4CF800DDD458 /* CommentsTableViewController.m in Sources */,
+				E14494621B9A1A39009AD02B /* SubscribedViewController.m in Sources */,
+				E14494651B9A1CB9009AD02B /* SubredditListTableViewController.m in Sources */,
+				E16ECB321B9A411D004B4D4C /* SubredditSwipeViewController.m in Sources */,
+				E15B1C541B9B21B6008E5445 /* UIImage+Resize.m in Sources */,
 				E144943D1B9A18C2009AD02B /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E144944C1B9A18C3009AD02B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E14494571B9A18C3009AD02B /* Pictures_for_RedditTests.m in Sources */,
+				E15B1C471B9B0D0E008E5445 /* Helper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		E14494521B9A18C3009AD02B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E14494361B9A18C2009AD02B /* Pictures for Reddit */;
-			targetProxy = E14494511B9A18C3009AD02B /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E14494441B9A18C2009AD02B /* Main.storyboard */ = {
@@ -347,55 +552,27 @@
 		};
 		E144945B1B9A18C3009AD02B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77B3A6D6455215BE1163CEB7 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "Pictures for Reddit/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Pictures;
 			};
 			name = Debug;
 		};
 		E144945C1B9A18C3009AD02B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1120C9D48112A311DA82CAD3 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "Pictures for Reddit/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		E144945E1B9A18C3009AD02B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Pictures for RedditTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pictures for Reddit.app/Pictures for Reddit";
-			};
-			name = Debug;
-		};
-		E144945F1B9A18C3009AD02B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Pictures for RedditTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pictures for Reddit.app/Pictures for Reddit";
+				PRODUCT_NAME = Pictures;
 			};
 			name = Release;
 		};
@@ -418,14 +595,7 @@
 				E144945C1B9A18C3009AD02B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		E144945D1B9A18C3009AD02B /* Build configuration list for PBXNativeTarget "Pictures for RedditTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E144945E1B9A18C3009AD02B /* Debug */,
-				E144945F1B9A18C3009AD02B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

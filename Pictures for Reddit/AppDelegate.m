@@ -8,6 +8,10 @@
 
 #import "AppDelegate.h"
 
+#import <RedditKit/RedditKit.h>
+#import <SSKeyChain/SSKeyChain.h>
+#import <AFNetworking/AFNetworkActivityIndicatorManager.h>
+
 @interface AppDelegate ()
 
 @end
@@ -15,8 +19,14 @@
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    self.window.tintColor = [[UIColor blackColor] colorWithAlphaComponent:0.8f];
+    
+    [RKClient sharedClient].userAgent = @"ios:com.rdougan.picturesforreddit:1.0 (by /u/rdougan)";
+    [AFNetworkActivityIndicatorManager sharedManager].enabled = YES;
+    
+    
     return YES;
 }
 

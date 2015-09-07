@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
+    </dependencies>
+    <scenes>
+        <!--Subreddit Swipe View Controller-->
+        <scene sceneID="vpu-zs-LB0">
+            <objects>
+                <pageViewController storyboardIdentifier="SubredditSwipeViewController" autoresizesArchivedViewToFullSize="NO" automaticallyAdjustsScrollViewInsets="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="9rP-xw-FEu" customClass="SubredditSwipeViewController" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iDm-aa-DHM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="23" y="136"/>
+        </scene>
+        <!--Subreddit Image View Controller-->
+        <scene sceneID="sbV-wA-Eun">
+            <objects>
+                <viewController storyboardIdentifier="SubredditImageViewController" id="UvH-E3-hOD" customClass="SubredditImageViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RQo-k9-BG3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="white" id="cNb-k1-mn0">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="QaT-kS-eA8">
+                                        <rect key="frame" x="110" y="234" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <connections>
+                                    <outlet property="delegate" destination="UvH-E3-hOD" id="lY1-jX-8QH"/>
+                                </connections>
+                            </scrollView>
+                            <progressView hidden="YES" opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" id="Bzq-xR-TVJ">
+                                <rect key="frame" x="85" y="283" width="150" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="progressTintColor" red="0.59554529671717171" green="0.59554529671717171" blue="0.59554529671717171" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                                <color key="trackTintColor" red="0.21715198863636365" green="0.21715198863636365" blue="0.21715198863636365" alpha="1" colorSpace="calibratedRGB"/>
+                            </progressView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Problem loading picture" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="meB-xT-9bU">
+                                <rect key="frame" x="66" y="274" width="187" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="0.70000000000000007" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" id="DBD-HJ-rYV">
+                                <rect key="frame" x="0.0" y="530" width="320" height="38"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5xa-aV-Puz">
+                                        <rect key="frame" x="8" y="9" width="304" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.65000000000000002" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="W8z-tl-Axe">
+                                <rect key="frame" x="0.0" y="0.0" width="32" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
+                                <connections>
+                                    <action selector="previous:" destination="UvH-E3-hOD" eventType="touchUpInside" id="3ur-5p-YSc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Alq-Yz-EK0">
+                                <rect key="frame" x="288" y="0.0" width="32" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" heightSizable="YES"/>
+                                <connections>
+                                    <action selector="next:" destination="UvH-E3-hOD" eventType="touchUpInside" id="bEr-AP-9cl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="QaT-kS-eA8" id="Ca5-qg-tzX"/>
+                        <outlet property="nameLabel" destination="5xa-aV-Puz" id="m0h-SW-3It"/>
+                        <outlet property="nameLabelContainer" destination="DBD-HJ-rYV" id="rFC-y5-YHa"/>
+                        <outlet property="nextButton" destination="Alq-Yz-EK0" id="Lp4-yc-Dwf"/>
+                        <outlet property="previousButton" destination="W8z-tl-Axe" id="87e-fU-7FF"/>
+                        <outlet property="problemLabel" destination="meB-xT-9bU" id="Q0y-78-izp"/>
+                        <outlet property="progressBar" destination="Bzq-xR-TVJ" id="MRs-d9-iuJ"/>
+                        <outlet property="scrollView" destination="cNb-k1-mn0" id="krI-U8-Csr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q3Y-K8-UNf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="402" y="136"/>
+        </scene>
+    </scenes>
+</document>
